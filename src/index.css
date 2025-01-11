@@ -1,0 +1,78 @@
+body {
+  background-color: black !important;
+  color: white !important;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.nav {
+  width: 100%;
+}
+.search_bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+}
+
+.inp {
+  padding-left: 30px; /* Adds space for the icon */
+  border-radius: 12px;
+  height: 40px; /* Adjust the height as needed */
+  width: 100%;
+  font-size: 16px;
+  background-color: rgb(28, 27, 27);
+  color: #ffffff;
+}
+
+.icon-container {
+  position: absolute;
+  left: 10px; /* Adjust this to fit the icon */
+}
+
+.search-icon {
+  color: #ffffff; /* Set the color you prefer */
+  font-size: 20px; /* Adjust the size of the icon */
+}
+.search_bar .inp::placeholder{
+  font-weight: bold;
+}
+.nav_bar {
+  width: inherit;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  padding: 10px;
+  background-color: rgb(210, 148, 67);
+  top: 0;
+}
+.left {
+  text-decoration: none;
+  color: black;
+}
+.sub_bar {
+  background-color: rgb(39, 24, 5);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 60px;
+  transition: all 4s ease-in; 
+}
+
+.sub_bar .item {
+  transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.sub_bar .item:hover {
+  transform: scale(1, 2);
+  color: rgb(210, 148, 67);
+}
+td{
+  vertical-align: middle;
+  cursor: pointer;
+}
