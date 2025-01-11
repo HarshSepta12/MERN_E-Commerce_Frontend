@@ -4,7 +4,8 @@ import axios from "axios";
 import { ToastContainer, toast, Bounce } from "react-toastify";
 
 const AppState = (props) => {
-  const url = "http://localhost:1000/api";
+  // const url = "http://localhost:1000/api";
+  const url = "https://mern-e-commerce-api-zd5h.onrender.com/api";
   const [products, setProduct] = useState([]);
   const [token, setToken] = useState("");
   const [isAuthenticated, setIsAuthenticated] = useState(false);
